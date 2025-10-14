@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/ESDAN/static/css/main.dfb03293.css",
+    "main.js": "/ESDAN/static/js/main.9c1480f3.js",
+    "static/js/453.a06e1e98.chunk.js": "/ESDAN/static/js/453.a06e1e98.chunk.js",
+    "static/media/adi-goldstein-EUsVwEOsblE-unsplash.jpg": "/ESDAN/static/media/adi-goldstein-EUsVwEOsblE-unsplash.b16cfc22fcde2f19ed69.jpg",
+    "static/media/tech4.jpg": "/ESDAN/static/media/tech4.5b356b6cabba96ef4080.jpg",
+    "static/media/tech5.jpg": "/ESDAN/static/media/tech5.7961be956231c72c5d3b.jpg",
+    "static/media/tech2.jpg": "/ESDAN/static/media/tech2.73dfb6ff37786f8ae924.jpg",
+    "static/media/tech3.jpg": "/ESDAN/static/media/tech3.5303a1bcb60e6fc7ef1c.jpg",
+    "static/media/WhatsApp.png": "/ESDAN/static/media/WhatsApp.fd5a85d4ecf2c55cbbb4.png",
+    "static/media/Main_logo.png": "/ESDAN/static/media/Main_logo.937b80654fdfe709c9d5.png",
+    "static/media/phone.png": "/ESDAN/static/media/phone.8335e523c06ccd7218d4.png",
+    "static/media/Gmail.png": "/ESDAN/static/media/Gmail.8c5a9700de20e8eb4668.png",
+    "static/media/ImprovedNoBg.png": "/ESDAN/static/media/ImprovedNoBg.9e6c0540925635bb212a.png",
+    "static/media/farmer.jpg": "/ESDAN/static/media/farmer.066a6a47ca9cca646546.jpg",
+    "static/media/img1.jpg": "/ESDAN/static/media/img1.8c173925c1e062b4f20d.jpg",
+    "static/media/practical-sessions.jpg": "/ESDAN/static/media/practical-sessions.128a063e927e275e0ec3.jpg",
+    "static/media/noBGLogo.png": "/ESDAN/static/media/noBGLogo.10968a559de7b0a229ef.png",
+    "static/media/group.png": "/ESDAN/static/media/group.d93e1199b49e5356775d.png",
+    "static/media/cityscape.png": "/ESDAN/static/media/cityscape.78357ab9a2ba55e45c92.png",
+    "static/media/map.png": "/ESDAN/static/media/map.76b490c816f2b93cd359.png",
+    "static/media/meeting.png": "/ESDAN/static/media/meeting.4684a8a7a5adaa819787.png",
+    "static/media/image2.jpeg": "/ESDAN/static/media/image2.6b656485d73db973237e.jpeg",
+    "static/media/image1.jpeg": "/ESDAN/static/media/image1.39f5d819b82e49904324.jpeg",
+    "index.html": "/ESDAN/index.html",
+    "main.dfb03293.css.map": "/ESDAN/static/css/main.dfb03293.css.map",
+    "main.9c1480f3.js.map": "/ESDAN/static/js/main.9c1480f3.js.map",
+    "453.a06e1e98.chunk.js.map": "/ESDAN/static/js/453.a06e1e98.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfb03293.css",
+    "static/js/main.9c1480f3.js"
+  ]
+}
