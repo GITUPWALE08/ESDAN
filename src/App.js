@@ -641,7 +641,7 @@ export default function App() {
                 />
                 <a 
                   class="text-decoration-none text-reset"
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=example@domain.com&su=New%20Contact&body=Name%3A%20%0AContact%20info%3A%20%0A%0AEnquiry:%2C%0A" target="_blank" rel="noopener">Email: info@company.com </a></p>
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=example@domain.com&su=New%20Contact&body=Name%3A%20%0AContact%20info%3A%20%0A%0AEnquiry:%2C%0A" target="_blank" rel="noreferrer">Email: info@company.com </a></p>
           <p><img 
                   src={images.WhatsApp} 
                   alt="Economic and Social Image of Africa and Nigeria"
