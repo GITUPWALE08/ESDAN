@@ -30,6 +30,8 @@ export default function App() {
     }
   };
 
+
+
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
   const [hoverIndex, setHoverIndex] = useState(null);
   //const [sidebarWidth, setSidebarWidth] = useState(300);
@@ -190,11 +192,11 @@ export default function App() {
           <h2 class="text-start">About the Company</h2>
           <div className="mb-5 mt-5 container py-4" style={{ display: 'flex' }}>
 
-            <img src= {images.group} alt="1" 
+            <img src= {images.CEO2} alt="1" 
             className="card-img-top img-fluid rounded-3"
             style={{
               height: "auto",
-              width: "25vw",
+              width: "25%",
               flex: 1,
             }} 
           />
@@ -396,7 +398,7 @@ export default function App() {
 
                     <div className="mt-5 mcol-12 col-md-6 mb-3">
                       <img
-                        src={images.tech3}
+                        src={images.Edu_img}
                         alt="Economic and Social Image of Africa and Nigeria"
                         className="mb-3 img-fluid card-img-top rounded-3"
                       />
@@ -551,7 +553,7 @@ export default function App() {
 
             <div className="bottom">
                 <img 
-                  src={images.tech1} 
+                  src={images.CEO2} 
                   alt="Economic and Social Image of Africa and Nigeria"
                   className="mb-3 img-fluid card-img-top rounded-3"
                    style={{
@@ -585,7 +587,7 @@ export default function App() {
 
             <div className="bottom">
                 <img 
-                  src={images.tech3} 
+                  src={images.technical} 
                   alt="Economic and Social Image of Africa and Nigeria"
                   className="mb-3 img-fluid card-img-top rounded-3"
                    style={{
@@ -597,8 +599,26 @@ export default function App() {
                   }}
                 />
                 <h3>Engr. SO Lawal</h3>
-                <h5>Technical Advisorr</h5>
+                <h5>Technical Advisor</h5>
             </div>
+
+            <div className="bottom">
+                <img 
+                  src={images.secretary} 
+                  alt="Economic and Social Image of Africa and Nigeria"
+                  className="mb-3 img-fluid card-img-top rounded-3"
+                   style={{
+                    height: "20vh",
+                    width: "auto",
+                    alignSelf: "center",
+                    alignItems: "center",
+                    borderRadius: "20px",
+                  }}
+                />
+                <h3>KEHINDE-AFOLABI Samuel Olugbenga</h3>
+                <h5>Comapny Secretary</h5>
+            </div>
+
 
             <div className="bottom">
                 <img 
@@ -640,8 +660,9 @@ export default function App() {
                   }}
                 />
                 <a 
-                  class="text-decoration-none text-reset"
+                  class="text-decoration-none text-reset ms-1 mb-2"
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=example@domain.com&su=New%20Contact&body=Name%3A%20%0AContact%20info%3A%20%0A%0AEnquiry:%2C%0A" target="_blank" rel="noreferrer">Email: info@company.com </a></p>
+
           <p><img 
                   src={images.WhatsApp} 
                   alt="Economic and Social Image of Africa and Nigeria"
@@ -653,9 +674,24 @@ export default function App() {
                     alignItems: "center",
                     borderRadius: "20px",
                   }}
-                />Phone: +123 456 7890</p>
-          <p>
-                Address: 123 Company St, City, Country</p>
+                /><a class="text-decoration-none text-reset ms-1 mb-2" href="https://wa.me/2348123932006">Phone: +234-8123932006</a>
+                  <a class="text-decoration-none text-reset ms-1 mb-2" href="https://wa.me/2348030752067">Phone: +234-8030752067</a>
+                  <a class="text-decoration-none text-reset ms-1 mb-2" href="https://wa.me/15857309793">Phone: +1 (585) 730-0793</a></p>
+
+          <p><img 
+                  src={images.location} 
+                  alt="Economic and Social Image of Africa and Nigeria"
+                  className="mb-2 img-fluid card-img-top rounded-3"
+                   style={{
+                    height: "3vh",
+                    width: "auto",
+                    alignSelf: "center",
+                    alignItems: "center",
+                    borderRadius: "20px",
+                  }}
+                />
+                <a class="text-decoration-none text-reset ms-1 mb-2" href="https://www.google.com/maps/dir/?api=1&destination=7.393143191205173,3.9372418856396023&travelmode=driving" target="_blank" rel="noopener noreferrer">ladipo AKande Complex Abayomi, Iwo Raod, Ibadan, Oyo state, Nigeria</a></p>
+                
         </footer>
       </div>
 
