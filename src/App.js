@@ -30,9 +30,9 @@ export default function App() {
       element.scrollIntoView({ behavior: "smooth" });
       setSidebarOpen(!sidebarOpen);
     }
-    // else if (id === "HelpDesk"){
-    //   setChatOpen(!chatOpen);
-    // }
+    else if (id === "HelpDesk"){
+      setChatOpen(!chatOpen);
+    }
   };
 
   const [hoverIndex, setHoverIndex] = useState(null);
@@ -116,7 +116,7 @@ export default function App() {
               </button>
             ))}
 
-            {/* <Chatbot/> */}
+            <Chatbot/>
         </div>
       </div>
 
