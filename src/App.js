@@ -1,5 +1,5 @@
 // App.js
-import React, { useState, MouseEnter } from "react";
+import React, { useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import noBG from "./images/ImprovedNoBg.png";
@@ -16,6 +16,7 @@ const sections = [
   { id: "targets", label: "Targets" },
   { id: "liaisons", label: "Liaison Partners" },
   { id: "executives", label: "Executives" },
+  { id: "HelpDesk", label: "HelpDesk" },
 ];
 
 
@@ -29,12 +30,12 @@ export default function App() {
       element.scrollIntoView({ behavior: "smooth" });
       setSidebarOpen(!sidebarOpen);
     }
+    // else if (id === "HelpDesk"){
+    //   setChatOpen(!chatOpen);
+    // }
   };
 
-
   const [hoverIndex, setHoverIndex] = useState(null);
-
-
 
   return (
 
@@ -45,28 +46,32 @@ export default function App() {
     }}>
       {/* Sidebar */}
       <div
-        className= {sidebarOpen && "bg-success border"}
+        className= {sidebarOpen ? "bg-success border": ""}
         style={{
-          maxWidth: sidebarWidth,
-          transition: "width 1s",
+          maxWidth: sidebarWidth(),
+          boxSizing: "border-box",
+          transition: "width 1.5s",
           overflowX: "hidden",
           position: "fixed",
           height: sidebarOpen ? "100%": "6%" ,
-          top: sidebarOpen ? "0" : "1%",
+          top: "0",
           left: 0,
           zIndex: 1000,
           borderBottomRightRadius: "30px",
           borderTopRightRadius: "30px",
+          display: "flex",
+          flexDirection: "column",
+          contain: "contents"
         }}
       >
-        <div className="d-flex flex-column align-items-center py-2">
+        <div className="d-flex flex-column align-items-center">
           <button
             className="btn btn-outline-success mb-3"
             onClick={toggleSidebar}
             aria-label={sidebarOpen ? "Close sidebar" : "Open sidebar"}
             style={{
               alignSelf: "end",
-              marginRight: "5px",
+              padding: "5px",
               color: "#009B77", 
               fontSize: "larger",
               fontWeight: "bolder",
@@ -79,7 +84,8 @@ export default function App() {
               <img src={noBG} alt="ESDAAN Logo" class="img-fluid" 
               style={{
                 maxWidth: "150px", 
-                display: sidebarOpen ? "flex" : "none"
+                display: sidebarOpen ? "flex" : "none",
+                flexShrink: 0,
               }}></img>
       
           </div>
@@ -100,7 +106,8 @@ export default function App() {
                   fontWeight: hoverIndex === section.id ? "bolder": 600,
                   color: hoverIndex === section.id ? "rgba(var(--bs-success-rgb), var(--bs-bg-opacity))" : "antiquewhite",
                   backgroundColor: hoverIndex === section.id && "#FFD700",
-                  margin: "25px",
+                  padding: "25px",
+                  display: chatOpen ? "none" : "block",
                 }}
                 onMouseEnter={() => setHoverIndex(section.id)}
                 onMouseLeave={() => setHoverIndex(null)}
@@ -108,12 +115,13 @@ export default function App() {
                 {section.label}
               </button>
             ))}
+
+            {/* <Chatbot/> */}
         </div>
       </div>
 
       {/* Main Content */}
       <HomePage/> 
-      <Chatbot/>
 
   
       {/* Back to Top Button */}
@@ -135,7 +143,7 @@ export default function App() {
         }}
         aria-label="Back to the top"
       >
-        <b style={{fontSize: "40px", fontWeight: "bolder"}}>TOP</b><br />
+        <b style={{fontSize: "20px", fontWeight: "bolder"}}>TOP</b><br />
         
       </button>
     </div>

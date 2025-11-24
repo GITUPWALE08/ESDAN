@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import images from "../images/gen_image";
 import noBG from "../images/ImprovedNoBg.png";
-import { Fragment } from "react";
 import useGlobalState from "./globalState";
 
 
@@ -15,13 +14,14 @@ export default function HomePage() {
 
         style={{
           marginLeft: sidebarWidth(),
-          paddingLeft: "5%",
+          paddingLeft: "3%",
           boxSizing: "border-box",
           flexGrow: 1,
           flexWrap: "wrap",
-          transition: "margin-left 0.8s",
+          transition: "margin-left 1.5s",
           maxWidth: `calc(100vw - ${sidebarWidth()}px)`,
-          background: "#F6F1D3"
+          background: "#F6F1D3",
+          margin: 0,
         }}
       >
         
@@ -168,7 +168,7 @@ export default function HomePage() {
             Eligibility Requirements:
 
             <ul>
-              <li>Must be a Nigerian or non-Nigerian committed to the vision of global development.</li>
+              <li>Must be a Nigerian committed to the vision of global development.</li>
               <li>Must be literate, with the ability to read and write.</li>
               <li>Must possess a genuine interest in economic empowerment and social transformation.</li>
               <li>Professionals, entrepreneurs, investors, researchers, and civil society actors are encouraged to join.</li>

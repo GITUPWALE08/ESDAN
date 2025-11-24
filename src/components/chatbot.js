@@ -31,15 +31,38 @@ const Chatbot = () => {
   console.log(chatOpen);
 
   return (
-    <div style={{ 
+    <div style={{
+      zIndex: 1050,
       maxWidth: 400, 
       margin: 'auto', 
       fontFamily: 'Arial, sans-serif',
-      maxHeight: "100vh",
-      align: "end",
-      position: "fixed",
-      display: chatOpen ? "block" : "none",
+      height: "75vh",
+      alignItems: "flex-end",
+      display: chatOpen ? "flex" : "none",
+      flexDirection: "column",
+      transition: "width 1s",
+      overflowX: "hidden",
+      overflowY: "auto",
+      left: 0,
+      flexGrow: 1,
       }}>
+      
+      <div className="d-flex flex-column align-items-center py-2">
+        <button
+          className="btn btn-outline-success mb-3"
+          onClick={() => setChatOpen(!chatOpen)}
+          aria-label={chatOpen ? "Close chat" : "Open chat"}
+          style={{
+            alignSelf: "end",
+            marginRight: "5px",
+            color: "#009B77", 
+            fontSize: "larger",
+            fontWeight: "bolder",
+          }}
+        >
+          {chatOpen && "X"}
+        </button>
+      </div>
       <div style={{ border: '1px solid #ccc', padding: 10, maxHeight: "100vh", overflowY: 'auto' }}>
         {messages.map((msg, idx) => (
           <div key={idx} style={{

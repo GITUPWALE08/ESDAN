@@ -15,7 +15,7 @@ const useGlobalState = create(
                             return isOpen ? "15vw": "6vw";
                             }
                             else{
-                            return isOpen ? "25vw": "6vw";
+                            return isOpen ? "50vw": "12vw";
                             }
                         }
 
@@ -26,7 +26,5 @@ const useGlobalState = create(
     }
   )
 );
-
-
 
 export default useGlobalState;
