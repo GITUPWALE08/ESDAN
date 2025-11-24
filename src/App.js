@@ -73,7 +73,7 @@ export default function App() {
               alignSelf: "end",
               padding: "5px",
               color: "#009B77", 
-              fontSize: "larger",
+              fontSize: "30px",
               fontWeight: "bolder",
             }}
           >
