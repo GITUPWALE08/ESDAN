@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GITUPWALE08/ESDAN/static/css/main.dfb03293.css",
-    "main.js": "/GITUPWALE08/ESDAN/static/js/main.c1d9cec9.js",
+    "main.js": "/GITUPWALE08/ESDAN/static/js/main.462105b2.js",
     "static/js/453.a06e1e98.chunk.js": "/GITUPWALE08/ESDAN/static/js/453.a06e1e98.chunk.js",
     "static/media/adi-goldstein-EUsVwEOsblE-unsplash.jpg": "/GITUPWALE08/ESDAN/static/media/adi-goldstein-EUsVwEOsblE-unsplash.b16cfc22fcde2f19ed69.jpg",
     "static/media/tech4.jpg": "/GITUPWALE08/ESDAN/static/media/tech4.5b356b6cabba96ef4080.jpg",
@@ -34,11 +34,11 @@
     "static/media/image1.jpeg": "/GITUPWALE08/ESDAN/static/media/image1.39f5d819b82e49904324.jpeg",
     "index.html": "/GITUPWALE08/ESDAN/index.html",
     "main.dfb03293.css.map": "/GITUPWALE08/ESDAN/static/css/main.dfb03293.css.map",
-    "main.c1d9cec9.js.map": "/GITUPWALE08/ESDAN/static/js/main.c1d9cec9.js.map",
+    "main.462105b2.js.map": "/GITUPWALE08/ESDAN/static/js/main.462105b2.js.map",
     "453.a06e1e98.chunk.js.map": "/GITUPWALE08/ESDAN/static/js/453.a06e1e98.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfb03293.css",
-    "static/js/main.c1d9cec9.js"
+    "static/js/main.462105b2.js"
   ]
 }
