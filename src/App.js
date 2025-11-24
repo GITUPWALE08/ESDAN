@@ -48,7 +48,7 @@ export default function App() {
       <div
         className= {sidebarOpen ? "bg-success border": ""}
         style={{
-          maxWidth: sidebarWidth(),
+          maxWidth: sidebarWidth,
           boxSizing: "border-box",
           transition: "width 1.5s",
           overflowX: "hidden",

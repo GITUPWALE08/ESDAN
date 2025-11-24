@@ -12,7 +12,7 @@ const useGlobalState = create(
       sidebarWidth: () => {
                             const isOpen = get().sidebarOpen;
                             if (window.innerWidth > 1000) {
-                            return isOpen ? "15vw": "6vw";
+                            return isOpen ? "15vw": "10vw";
                             }
                             else{
                             return isOpen ? "50vw": "12vw";
