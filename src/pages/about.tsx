@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import images from '../assets/images/gen_image'; // Ensure this file exports your images object
 
 export default function About() {

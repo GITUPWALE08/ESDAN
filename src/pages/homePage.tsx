@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Link } from 'react-router-dom';
 import noBG from '../assets/images/ImprovedNoBg.png'; // Update paths based on your new folder structure
 
