@@ -7,7 +7,7 @@ export default function About() {
     { name: 'Dr. Temitope Ademola Afolabi', role: 'Head, Agric Revolution', img: images.Head },
     { name: 'Engr. SO Lawal', role: 'Technical Advisor', img: images.technical },
     { name: 'KEHINDE-AFOLABI Samuel Olugbenga', role: 'Company Secretary', img: images.secretary },
-    { name: 'Comr. Adegoke Adewale', role: 'Lead Developer (IT)', img: images.lead_dev3 },
+    { name: 'Adegoke Adewale', role: 'Lead Developer (IT)', img: images.lead_dev3 },
   ];
 
   return (
