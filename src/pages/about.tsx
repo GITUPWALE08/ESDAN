@@ -3,11 +3,11 @@ import images from '../assets/images/gen_image'; // Ensure this file exports you
 
 export default function About() {
   const executives = [
-    { name: 'Dr. Prince Ademola Yisau Adegoke', role: 'Chairman / CEO', img: images.CEO2 },
-    { name: 'Dr. Temitope Ademola Afolabi', role: 'Head, Agric Revolution', img: images.tech2 },
+    { name: 'Dr. Prince Ademola Yisau Adegoke', role: 'Chairman / CEO', img: images.CEO5 },
+    { name: 'Dr. Temitope Ademola Afolabi', role: 'Head, Agric Revolution', img: images.Head },
     { name: 'Engr. SO Lawal', role: 'Technical Advisor', img: images.technical },
     { name: 'KEHINDE-AFOLABI Samuel Olugbenga', role: 'Company Secretary', img: images.secretary },
-    { name: 'Comr. Adegoke Adewale', role: 'Lead Developer (IT)', img: images.tech4 },
+    { name: 'Comr. Adegoke Adewale', role: 'Lead Developer (IT)', img: images.lead_dev3 },
   ];
 
   return (
