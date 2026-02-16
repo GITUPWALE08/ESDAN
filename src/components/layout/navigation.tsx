@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Menu, X, Home, Info, Target, Users, Handshake } from 'lucide-react';
+import { Menu, X, Home, Info, Target, Users, Handshake, ShoppingBag } from 'lucide-react';
 import { useGlobalState } from '../../globalStore/useGlobalState';
 import noBG from '../../assets/images/ImprovedNoBg.png';
 
@@ -19,6 +19,7 @@ export default function Navigation() {
   const navItems = [
     { name: 'Home', path: '/', icon: <Home size={24} /> },
     { name: 'About & Mission', path: '/about', icon: <Info size={24} /> },
+    { name: 'Products', path: '/products', icon: <ShoppingBag size={24} /> },
     { name: 'Projects', path: '/projects', icon: <Target size={24} /> },
     { name: 'Membership', path: '/membership', icon: <Users size={24} /> },
     { name: 'Partners', path: '/partners', icon: <Handshake size={24} /> },
