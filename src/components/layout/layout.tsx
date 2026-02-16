@@ -5,12 +5,24 @@ import Chatbot from '../chatbot';
 import Footer from './footer';
 
 export default function Layout() {
-  const { pathname } = useLocation();
+// Automatically scroll to top when the route (pathname) changes
+  const { pathname, hash } = useLocation(); // Get 'hash' too
 
-  // Automatically scroll to top when the route (pathname) changes
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    if (hash) {
+      const id = hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100); // Small delay ensures page content is loaded
+      }
+    } 
+    // If NO hash, scroll to top as usual
+    else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
 
   return (
     <div className="min-h-screen bg-brand-cream font-sans">

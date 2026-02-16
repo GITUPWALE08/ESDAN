@@ -48,6 +48,10 @@ export default function Projects() {
     },
   ];
 
+  const generateId = (title: string) => {
+    return title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+  };
+
   return (
     <div className="space-y-8 md:space-y-12 pb-20"> {/* pb-20 for Chatbot space */}
       <header className="border-b-2 border-brand-green/20 pb-4">
@@ -57,7 +61,7 @@ export default function Projects() {
 
       <div className="grid gap-8">
         {projects.map((proj, idx) => (
-          <section key={idx} className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+          <section key={idx} id={generateId(proj.title)} className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
             <div className="flex flex-col md:flex-row">
               {/* Image Container: Full width on mobile, half width on desktop */}
               <div className="w-full md:w-2/5 h-56 md:h-auto relative">
