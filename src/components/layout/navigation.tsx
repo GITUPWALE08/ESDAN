@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Menu, X, Home, Info, Target, Users, Handshake, ShoppingBag } from 'lucide-react';
+import { Menu, X, Home, Info, Target, Users, Handshake } from 'lucide-react';
 import { useGlobalState } from '../../globalStore/useGlobalState';
 import noBG from '../../assets/images/ImprovedNoBg.png';
 
